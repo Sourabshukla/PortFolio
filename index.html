@@ -1,183 +1,546 @@
 <!doctype html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Sourab Kumar Shukla - Full Stack .NET Developer portfolio" />
+
+  <meta
+    name="description"
+    content="Sourab Kumar Shukla - Full Stack .NET Developer portfolio"
+  />
+
   <meta name="theme-color" content="#121724" />
+
   <title>Sourab Kumar Shukla | Full Stack .NET Developer</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
   <link
     href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800;900&family=Pacifico&display=swap"
-    rel="stylesheet" />
+    rel="stylesheet"
+  />
+
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
+
+  <!-- Background animation -->
+  <div class="background-effects">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <!-- ================= NAVBAR ================= -->
+
   <header class="nav shell">
-    <a class="logo" href="#home">&lt;Sourab<span>/</span>&gt;</a>
-    <button class="menu-button" aria-label="Open navigation">☰</button>
-    <nav><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a
-        href="#education">Education</a><a href="#contact">Contact me</a></nav>
+
+    <a class="logo" href="#home">
+      &lt;Sourab<span>/</span>&gt;
+    </a>
+
+    <button
+      class="menu-button"
+      id="menuButton"
+      aria-label="Open navigation"
+      aria-expanded="false"
+    >
+      ☰
+    </button>
+
+    <nav id="mainNav">
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact me</a>
+    </nav>
+
   </header>
+
+
   <main id="home">
+
+    <!-- ================= HERO ================= -->
+
     <section class="hero shell">
+
       <div class="hero-copy reveal">
-        <p class="hello">Hi all, I'm Sourab <span>👋</span></p>
-        <h1>Full Stack .NET<br />Developer <span>🚀</span></h1>
-        <p>Passionate about building secure, scalable web applications that make complex enterprise work feel simple. I
-          bring ideas to life with C#, ASP.NET Core, React.js, SQL Server, and Azure.</p>
-        <div class="socials"><a aria-label="Email Sourab" href="mailto:sourabshukla22@gmail.com">✉</a><a
-            aria-label="Sourab on LinkedIn" href="https://www.linkedin.com/in/sourabshukla" target="_blank"
-            rel="noreferrer">in</a><a aria-label="Call Sourab" href="tel:+919392866850">☎</a></div>
-        <div class="actions"><a class="button" href="#contact">CONTACT ME</a><a class="button button-outline"
-            href="#projects">VIEW MY WORK</a></div>
+
+        <p class="hello">
+          Hi all, I'm Sourab <span class="wave">👋</span>
+        </p>
+
+        <h1>
+          Full Stack .NET
+          <br />
+          Developer <span class="rocket">🚀</span>
+        </h1>
+
+        <p class="hero-description">
+          Passionate about building secure, scalable web applications
+          that make complex enterprise work feel simple. I bring ideas
+          to life with C#, ASP.NET Core, React.js, SQL Server, and Azure.
+        </p>
+
+        <div class="socials">
+
+          <a
+            aria-label="Email Sourab"
+            href="mailto:sourabshukla22@gmail.com"
+          >
+            ✉
+          </a>
+
+          <a
+            aria-label="Sourab on LinkedIn"
+            href="https://www.linkedin.com/in/sourabshukla"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            in
+          </a>
+
+          <a
+            aria-label="Call Sourab"
+            href="tel:+919392866850"
+          >
+            ☎
+          </a>
+
+        </div>
+
+        <div class="actions">
+
+          <a class="button" href="#contact">
+            CONTACT ME
+          </a>
+
+          <a class="button button-outline" href="#projects">
+            VIEW MY WORK
+          </a>
+
+        </div>
+
       </div>
-      <div class="developer-art reveal" aria-label="Developer illustration">
+
+
+      <!-- ================= DEVELOPER ART ================= -->
+
+      <div
+        class="developer-art reveal"
+        aria-label="Developer illustration"
+      >
+
         <div class="orb orb-one"></div>
         <div class="orb orb-two"></div>
+
         <div class="cloud cloud-one"></div>
         <div class="cloud cloud-two"></div>
+
         <div class="screen">
-          <div class="screen-bar"><i></i><i></i><i></i></div>
-          <code>&lt;build /&gt;<br /><b>secure</b> + scalable<br />const ideas = <em>reality</em></code>
+
+          <div class="screen-bar">
+            <i></i>
+            <i></i>
+            <i></i>
+          </div>
+
+          <code>
+            &lt;build /&gt;<br />
+            <b>secure</b> + scalable<br />
+            const ideas = <em>reality</em>
+          </code>
+
         </div>
+
         <div class="person">
+
           <div class="head"></div>
           <div class="hair"></div>
           <div class="body"></div>
+
           <div class="arm arm-left"></div>
           <div class="arm arm-right"></div>
+
           <div class="leg leg-left"></div>
           <div class="leg leg-right"></div>
+
         </div>
+
         <div class="spark s1">✦</div>
         <div class="spark s2">✦</div>
+
         <div class="tech-bubble b1">C#</div>
         <div class="tech-bubble b2">React</div>
+
       </div>
+
     </section>
+
+
+    <!-- ================= SKILLS ================= -->
+
     <section id="skills" class="section shell what">
-      <div class="section-art">
+
+      <div class="section-art reveal">
+
         <div class="planet">⌘</div>
         <div class="small-orbit"></div>
+
       </div>
+
+
       <div class="section-copy reveal">
-        <p class="eyebrow">WHAT I DO</p>
-        <h2>FULL STACK DEVELOPER WHO LOVES TO EXPLORE EVERY TECH STACK</h2>
+
+        <p class="eyebrow">
+          WHAT I DO
+        </p>
+
+        <h2>
+          FULL STACK DEVELOPER WHO LOVES TO EXPLORE EVERY TECH STACK
+        </h2>
+
         <div class="technology-row">
-          <span>.NET</span><span>React</span><span>SQL</span><span>Azure</span><span>Git</span><span>AI</span></div>
+
+          <span>.NET</span>
+          <span>C#</span>
+          <span>React</span>
+          <span>SQL</span>
+          <span>Azure</span>
+          <span>Git</span>
+          <span>AI</span>
+
+        </div>
+
         <ul class="checks">
-          <li>Develop interactive, high-quality web experiences for enterprise applications.</li>
-          <li>Build secure APIs and backend systems with robust authentication and access control.</li>
-          <li>Deliver clean, maintainable software through Agile collaboration and thoughtful engineering.</li>
+
+          <li>
+            Develop interactive, high-quality web experiences for
+            enterprise applications.
+          </li>
+
+          <li>
+            Build secure APIs and backend systems with robust
+            authentication and access control.
+          </li>
+
+          <li>
+            Deliver clean, maintainable software through Agile
+            collaboration and thoughtful engineering.
+          </li>
+
         </ul>
+
       </div>
+
     </section>
-    <!-- <section class="section shell proficiency">
-      <p class="eyebrow centered">PROFICIENCY</p>
-      <h2 class="centered">A balanced full stack toolkit.</h2>
-      <div class="meter-grid reveal">
-        <div>
-          <p>Frontend & UI Engineering <b>85%</b></p><i><span style="width:85%"></span></i>
-        </div>
-        <div>
-          <p>Backend & API Development <b>92%</b></p><i><span style="width:92%"></span></i>
-        </div>
-        <div>
-          <p>Database & Performance <b>88%</b></p><i><span style="width:88%"></span></i>
-        </div>
-        <div>
-          <p>Cloud & Delivery <b>78%</b></p><i><span style="width:78%"></span></i>
-        </div>
-      </div>
-    </section> -->
+
+
+    <!-- ================= EXPERIENCE ================= -->
+
     <section id="experience" class="section shell">
-      <p class="eyebrow">EXPERIENCE</p>
-      <h2>Where I've made an impact.</h2>
+
+      <p class="eyebrow">
+        EXPERIENCE
+      </p>
+
+      <h2>
+        Where I've made an impact.
+      </h2>
+
       <article class="experience-card reveal">
-        <div class="company-mark">FAI</div>
-        <div>
-          <p class="role-date">JAN 2024 - PRESENT</p>
-          <h3>Member Technical Staff</h3>
-          <p class="company-name">First American India Pvt Ltd · Hyderabad</p>
-          <ul>
-            <li>Designed and delivered enterprise applications using C#, ASP.NET Core MVC, Web API, and React.js.</li>
-            <li>Built secure REST APIs using JWT authentication and role-based access control.</li>
-            <li>Improved data reliability and performance through EF Core migrations, indexing, and stored procedures.
-            </li>
-            <li>Earned the Service Excellence Award in Q1 2026 for delivery quality and collaboration.</li>
-          </ul>
+
+        <div class="company-mark">
+          FAI
         </div>
+
+        <div>
+
+          <p class="role-date">
+            JAN 2024 - PRESENT
+          </p>
+
+          <h3>
+            Member Technical Staff
+          </h3>
+
+          <p class="company-name">
+            First American India Pvt Ltd · Hyderabad
+          </p>
+
+          <ul>
+
+            <li>
+              Designed and delivered enterprise applications using
+              C#, ASP.NET Core MVC, Web API, and React.js.
+            </li>
+
+            <li>
+              Built secure REST APIs using JWT authentication and
+              role-based access control.
+            </li>
+
+            <li>
+              Improved data reliability and performance through
+              EF Core migrations, indexing, and stored procedures.
+            </li>
+
+            <li>
+              Earned the Service Excellence Award in Q1 2026 for
+              delivery quality and collaboration.
+            </li>
+
+          </ul>
+
+        </div>
+
       </article>
+
     </section>
+
+
+    <!-- ================= PROJECTS ================= -->
+
     <section id="projects" class="section projects">
+
       <div class="shell">
-        <p class="eyebrow">FEATURED PROJECTS</p>
-        <h2>Things I've helped bring to life.</h2>
+
+        <p class="eyebrow">
+          FEATURED PROJECTS
+        </p>
+
+        <h2>
+          Things I've helped bring to life.
+        </h2>
+
+
         <div class="project-grid">
+
+
           <article class="project-card reveal">
-            <div class="project-cover cover-ncs"><span class="lock">⌾</span>
+
+            <div class="project-cover cover-ncs">
+
+              <span class="lock">
+                ⌾
+              </span>
+
               <div class="circuit"></div>
+
             </div>
+
             <div class="project-details">
-              <h3>NCS 2.0</h3>
-              <p>National County Security - an enterprise security gateway for controlled onboarding and county-level
-                access provisioning.</p>
-              <div class="project-tags"><span>C#</span><span>ASP.NET Core</span><span>React.js</span><span>SQL
-                  Server</span></div>
+
+              <h3>
+                NCS 2.0
+              </h3>
+
+              <p>
+                National County Security - an enterprise security
+                gateway for controlled onboarding and county-level
+                access provisioning.
+              </p>
+
+              <div class="project-tags">
+
+                <span>C#</span>
+                <span>ASP.NET Core</span>
+                <span>React.js</span>
+                <span>SQL Server</span>
+
+              </div>
+
             </div>
+
           </article>
+
+
           <article class="project-card reveal">
+
             <div class="project-cover cover-title">
-              <div class="search-ui">⌕ <span>Property records</span></div>
+
+              <div class="search-ui">
+                ⌕
+                <span>Property records</span>
+              </div>
+
               <div class="paper p-one"></div>
               <div class="paper p-two"></div>
               <div class="paper p-three"></div>
-            </div>
-            <div class="project-details">
-              <h3>TitleIQ</h3>
-              <p>A search automation platform that aggregates property documents from external providers for title
-                decisions.</p>
-              <div class="project-tags"><span>Web API</span><span>Azure Blob</span><span>ASP.NET MVC</span></div>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-    <section id="education" class="section shell education">
-      <p class="eyebrow">EDUCATION & ACHIEVEMENT</p>
-      <h2>Always learning, always building.</h2>
-      <div class="education-grid reveal">
-        <article><span>01</span>
-          <h3>Master of Computer Applications</h3>
-          <p>Completed November 2023</p><strong>CGPA 7.96 / 10</strong>
-        </article>
-        <article><span>02</span>
-          <h3>Bachelor of Science (MSCS)</h3>
-          <p>Completed August 2021</p><strong>CGPA 8.77 / 10</strong>
-        </article>
-                <article class="award"><span>✦</span>
-          <h3>Service Excellence Award</h3>
-          <p>First American India · Q1 2026</p><strong>Outstanding delivery & collaboration</strong>
-        </article>
-      </div>
-    </section>
-    <section id="contact" class="contact">
-      <div class="shell reveal">
-        <p class="eyebrow">CONTACT ME</p>
-        <h2>Let's build something<br /><span>great together.</span></h2>
-        <p>Have a role, product idea, or difficult engineering problem? I'd love to hear about it.</p><a
-          class="contact-link" href="mailto:sourabshukla22@gmail.com">sourabshukla22@gmail.com <span>→</span></a>
-        <div class="contact-footer"><a href="https://www.linkedin.com/in/sourabshukla" target="_blank"
-            rel="noreferrer">LinkedIn</a><a href="tel:+919392866850">+91 9392866850</a><small>© <span id="year"></span>
-            SOURAB KUMAR SHUKLA</small></div>
-      </div>
-    </section>
-  </main>
-  <script src="script.js"></script>
-</body>
 
+            </div>
+
+            <div class="project-details">
+
+              <h3>
+                TitleIQ
+              </h3>
+
+              <p>
+                A search automation platform that aggregates
+                property documents from external providers for
+                title decisions.
+              </p>
+
+              <div class="project-tags">
+
+                <span>Web API</span>
+                <span>Azure Blob</span>
+                <span>ASP.NET MVC</span>
+
+              </div>
+
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= EDUCATION ================= -->
+
+    <section id="education" class="section shell education">
+
+      <p class="eyebrow">
+        EDUCATION & ACHIEVEMENT
+      </p>
+
+      <h2>
+        Always learning, always building.
+      </h2>
+
+      <div class="education-grid reveal">
+
+
+        <article>
+
+          <span>01</span>
+
+          <h3>
+            Master of Computer Applications
+          </h3>
+
+          <p>
+            Completed November 2023
+          </p>
+
+          <strong>
+            CGPA 7.96 / 10
+          </strong>
+
+        </article>
+
+
+        <article>
+
+          <span>02</span>
+
+          <h3>
+            Bachelor of Science (MSCS)
+          </h3>
+
+          <p>
+            Completed August 2021
+          </p>
+
+          <strong>
+            CGPA 8.77 / 10
+          </strong>
+
+        </article>
+
+
+        <article class="award">
+
+          <span>✦</span>
+
+          <h3>
+            Service Excellence Award
+          </h3>
+
+          <p>
+            First American India · Q1 2026
+          </p>
+
+          <strong>
+            Outstanding delivery & collaboration
+          </strong>
+
+        </article>
+
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= CONTACT ================= -->
+
+    <section id="contact" class="contact">
+
+      <div class="shell reveal">
+
+        <p class="eyebrow">
+          CONTACT ME
+        </p>
+
+        <h2>
+          Let's build something
+          <br />
+          <span>great together.</span>
+        </h2>
+
+        <p>
+          Have a role, product idea, or difficult engineering
+          problem? I'd love to hear about it.
+        </p>
+
+        <a
+          class="contact-link"
+          href="mailto:sourabshukla22@gmail.com"
+        >
+          sourabshukla22@gmail.com
+          <span>→</span>
+        </a>
+
+
+        <div class="contact-footer">
+
+          <a
+            href="https://www.linkedin.com/in/sourabshukla"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn
+          </a>
+
+          <a href="tel:+919392866850">
+            +91 9392866850
+          </a>
+
+          <small>
+            © <span id="year"></span>
+            SOURAB KUMAR SHUKLA
+          </small>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <script src="script.js"></script>
+
+</body>
 </html>
